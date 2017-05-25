@@ -1,0 +1,12 @@
+####### Estas configuracoes sao baseadas no artigo da orcale 
+####### https://docs.oracle.com/cd/E40520_01/integrator.311/integrator_install/src/cli_ldi_server_config.html &
+####### https://docs.oracle.com/cd/E40520_01/integrator.311/integrator_install/src/cli_ldi_server_config.html
+
+
+####### Passo 1
+##   1 - entrar na pasta $CATALINA_HOME/bin e procurar o ficheiro setenv. se tiver a linha do JAVA_OPTS substituir por esta,
+##   e gravar.
+export JAVA_OPTS="-Dfile.encoding=UTF-8 -Xms512m -Xmx1024m -XX:PermSize=64m -XX:MaxPermSize=356m -server"
+##
+####### Passo 2
+Reiniciar tomcat
